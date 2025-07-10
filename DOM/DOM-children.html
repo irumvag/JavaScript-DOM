@@ -1,0 +1,40 @@
+<html>
+<body>
+  <div>Users:</div>
+  <ul>
+    <li>John</li>
+    <li>Pete</li>
+  </ul>
+  <code>
+    There are many ways, for instance:
+<br>
+The <div> DOM node:
+
+document.body.firstElementChild
+// or<br>
+document.body.children[0]<br>
+// or (the first node is space, so we take 2nd)<br>
+document.body.childNodes[1]<br>
+The <ul> DOM node:
+
+document.body.lastElementChild<br>
+// or
+document.body.children[1]
+The second <li> (with Pete):
+
+// get <ul>, and then get its last element child<br>
+document.body.lastElementChild.lastElementChild<br>
+  </code>
+  <script>
+    document.write(document.body.childNodes[2])
+    document.write(document.body.firstChild.nextSibling.nextSibling.nextSibling.nextSibling)
+    document.write(document.body.childNodes[4].childNodes[2])
+  </script>
+</body>
+</html>
+<!-- For each of the following, 
+ give at least one way of how to access them:
+
+The <div> DOM node?
+The <ul> DOM node?
+The second <li> (with Pete)? -->

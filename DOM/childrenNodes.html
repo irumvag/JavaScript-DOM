@@ -1,0 +1,34 @@
+<html>
+<body>
+  <script>
+    alert( document.documentElement.parentNode ); // document
+    alert( document.documentElement.parentElement ); // null
+  </script>
+  <div>Begin</div>
+
+  <ul>
+    <li>Information</li>
+  </ul>
+
+  <div>End</div>
+
+  <script>
+    for (let i = 0; i < document.body.childNodes.length; i++) {
+      document.write(document.body.childNodes[i]); // Text, DIV, Text, UL, ..., SCRIPT
+    }
+  </script>
+  <br><br>
+  ...more stuff...
+  <br>
+  <script>
+    for (let node of document.body.childNodes) {
+        document.write(node);
+    }
+  </script>
+  <br>
+  <script>
+    alert( document.documentElement.parentNode ); // document
+    alert( document.documentElement.parentElement ); // null
+  </script>
+</body>
+</html>
