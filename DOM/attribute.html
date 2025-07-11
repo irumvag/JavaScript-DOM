@@ -1,0 +1,38 @@
+<body>
+  <p>A paragraph</p>
+  <div>A div</div>
+<div id="elem">
+</div>
+<div id="chatDiv">what's the following things
+</div>
+  <script>
+    //elem.innerText=( document.body.innerHTML ); // read the current contents
+    //document.body.innerHTML = 'The new BODY!'; // replace it
+    chatDiv.innerHTML += "<div>Hello<img src='smile.gif'/> !</div>";
+    chatDiv.innerHTML += "How goes?";
+  </script>
+
+<script>
+    const para=document.createElement('p');
+    const textx=document.createTextNode('Hello, I\'m Gad!');
+    para.appendChild(textx);
+    document.body.appendChild(para);
+    const myPara = document.createElement('p');
+    const textOfParagraph = document.createTextNode('I am the text for the paragraph!');
+    myPara.appendChild(textOfParagraph);
+    document.body.appendChild(myPara);
+</script>
+
+<br>
+<br>
+
+<div id="elem1"></div>
+<div id="elem2"></div>
+
+<script>
+  let name = prompt("What's your name?", "<b>Winnie-the-Pooh!</b>");
+
+  elem1.innerHTML = name;
+  elem2.textContent = name;
+</script>
+</body>
