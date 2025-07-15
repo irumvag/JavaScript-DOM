@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>
+
+    </title>
+    </head>
+    <body>
+        <ol id="ol">
+        <li>0</li>
+        <li>1</li>
+        <li>2</li>
+        </ol>
+        <script>
+            let node=document.createTextNode("The first and the last");
+            ol.before(node);
+            ol.after("tomorrow");
+            let li=document.createElement('li');
+            console.log(li);
+            li.innerHTML="<b>I love you lord</b>";
+            ol.prepend(li);
+            let li1=document.createElement('li');
+            console.log(li1.innerHTML="last one");
+            console.log(ol.append(li1));
+        </script>
+    </body>
+</html>
