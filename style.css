@@ -3,7 +3,9 @@ body {
   max-width: 100vw;
   margin: 1em auto;
 }
-
+.sale{
+  background-color: #ffddd2;
+}
 #products {
   display: flex;
   flex-wrap: wrap;
